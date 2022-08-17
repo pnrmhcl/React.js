@@ -3,8 +3,10 @@ import "./login.css";
 import Button from "../../components/Button/Button";
 import Form from "../../components/Form/Form";
 import Input from "../../components/Input/Input";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
+  const navigate = useNavigate();
   const [user, setUser] = useState({ name: "", password: "" });
   const handleChange = (e) => {
     if (e.target.type === "text") {
@@ -25,7 +27,7 @@ function Login() {
     } else if (user.password === "") {
       alert("Şifre alanı boş geçilemez.");
     } else if (user.name === data.username && user.password === data.password) {
-      alert("Giriş Yapabilirsiniz.");
+      navigate("/home");
     } else {
       alert("Kullanıcı adı yada şifreniz yanlış");
     }

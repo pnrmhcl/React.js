@@ -1,0 +1,49 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.label {
+  right: 195px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(251, 255, 255);
+  font-weight: bold;
+}
+.custom-checkbox input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+.custom-checkbox {
+  position: relative;
+  margin: 3px;
+  vertical-align: middle;
+  width: 20px;
+  height: 18px;
+  border: 1px solid #ddd;
+  display: inline-block;
+  cursor: pointer;
+}
+.custom-checkbox-label {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(57, 10, 38);
+  padding-right: 174px;
+  font-weight: bold;
+}
+.forget_password {
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: rgb(10, 4, 42);
+}
+.forget_password:hover {
+  color: rgb(239, 237, 245);
+}
+.forget_password_container {
+  margin-top: 5px;
+  padding: 5px;
+  padding-right: 16px;
+}
